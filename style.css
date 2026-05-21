@@ -14,7 +14,7 @@ body {
     user-select: none;
     /* end */
     color: white;
-    font-family: "Arial";
+    font-family: "Roboto, Arial";
 }
 
 body * {
@@ -24,4 +24,8 @@ body * {
 
 .trans {
     opacity: 0.5;
+}
+
+.imporant {
+    color: yellow;
 }
