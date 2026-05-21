@@ -1,4 +1,4 @@
 # thyrocytes.github.io
-my website, I guess!! i will be adding stuff here, but please dont expect them to function great.
+My website, I guess!! I will be adding stuff here, but please don't expect them to function well (if they have any code).
 
-update 4/17/2025 @ 9:00 pm: after adding the cryptid tag code my javascript instantly exploded to 99.8%. awesome github :D
+Update 4/17/2025 @ 9:00 P.M.: After adding the Cryptid Tag code, my JavaScript percentage instantly exploded to 99.8%. Awesome GitHub :D

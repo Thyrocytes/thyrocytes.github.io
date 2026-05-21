@@ -28,6 +28,7 @@ function coolmathCallLevelRestart(level)
 console.log("level restart " + level);
 }
 
+// I'm mostly confused about the code below me. Every Cryptid Tag level is not locked behind some requirement..
 var shouldUnlockAll = false;
 
 function unlockAllLevels()
