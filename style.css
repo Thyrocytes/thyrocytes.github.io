@@ -14,7 +14,7 @@ body {
     user-select: none;
     /* end */
     color: white;
-    font-family: "Roboto, Arial";
+    font-family: Roboto, Arial;
 }
 
 body * {
