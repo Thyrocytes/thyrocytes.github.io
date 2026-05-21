@@ -26,8 +26,6 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-    transform: scale(0.95);
 }
 
 .trans {
