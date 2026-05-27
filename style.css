@@ -19,6 +19,7 @@ body {
 
 body * {
 	margin-top: 2px;
+	margin-bottom: 2px;
 	text-align: center;
 }
 
@@ -36,7 +37,7 @@ img {
 
 .code {
 	font-family: "Courier New", Courier, monospace;
-	font-weight: lighter;
+	font-weight: normal;
 }
 
 .important {
