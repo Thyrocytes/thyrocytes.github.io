@@ -16,7 +16,7 @@
 	<body>
 		<h1>Worm 🐛</h1>
 		<p><span class="worm">Worm 🐛</span> is a <span class="info">TypeScript compiler and framework</span> which compiles <span class="info">TypeScript</span> into <span class="info">highly optimized and efficient machine code</span>, compared to other runtime solutions which <strong><span class="pink">merely shove a JavaScript engine into your executable.</span></strong></p>
-		<p>Please note that <span class="worm">Worm 🐛 does <strong>not provide</strong> its own runtime</span>. Use the command <span class="pink"><span class="code">worm run</span> (defaults to index.ts)</span> to <span class="worm">build and run your app instantly.</span></p>
+		<p>Please note that <span class="worm">Worm 🐛 does <strong>not provide</strong> its own runtime</span>. Use the command <span class="pink"><span style="font-family: monospace;">worm run</span> (defaults to index.ts)</span> to <span class="worm">build and run your app instantly.</span></p>
 		
 		<br>
 
@@ -35,9 +35,9 @@
 		<p>Here's a <span class="worm">"Hello Worm" server</span> in <span class="worm">Worm 🐛</span>:</p>
 		<pre>
 const server = Worm.serve({
-	routes: {
-		"/": new Response("Hello Worm!")
-	}
+routes: {
+"/": new Response("Hello Worm!")
+}
 });
 console.log(`Server running at ${server.url}`);
 		</pre>
