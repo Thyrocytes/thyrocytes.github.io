@@ -33,6 +33,7 @@ img {
 
 .code {
 	display: flex; justify-content: center; tab-size: 4;
+	border: 2px; border-radius: 2px; border-color: white;
 }
 
 .trans {
