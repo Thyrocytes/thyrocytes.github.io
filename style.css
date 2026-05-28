@@ -17,18 +17,18 @@ body {
 	font-family: "Roboto", Arial;
 }
 
-body * {
-	margin-top: 2px;
-	margin-bottom: 2px;
-	text-align: center;
-}
-
 img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 
 	transform: scale(0.95);
+}
+
+.center {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	text-align: center;
 }
 
 .trans {
