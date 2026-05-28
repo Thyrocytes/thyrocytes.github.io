@@ -21,9 +21,9 @@
 		<br>
 
 		<p><span class="worm">Worm 🐛</span> aims to provide:</p>
-		<p>- <span class="info">server, CLI, audio, and system GUI utilities</span> with <span class="pink">Bun-like syntax</span> out of the box to allow <span class="info">TypeScript</span> and/or <span class="pink">Bun developers</span> to comfortably create their own apps with <span class="worm">Worm 🐛</span></p>
+		<p>- <span class="info">server, CLI, audio, threading, and system GUI utilities</span> with <span class="pink">Bun-like syntax</span> out of the box to allow <span class="info">TypeScript</span> and/or <span class="pink">Bun developers</span> to comfortably create their own apps with <span class="worm">Worm 🐛</span></p>
 		<p>- <span class="green">Node.js</span> and <span class="pink">Bun</span> compatibility for transitioning developers</p>
-		<p>- a proprietary <span class="info">TypeScript lexer and compiler</span> written in <span class="important">Zig</span> to make <span class="info">compiles faster</span> and <span class="worm">get rid of bloat: unnecessary DLL imports, vtables, namespaces, etc.</span></p>
+		<p>- a proprietary <span class="info">TypeScript lexer and compiler</span> written in <span class="important">Zig</span> to make <span class="info">compilations really fast</span> and <span class="worm">get rid of bloat: unnecessary DLL imports, vtables, namespaces, etc.</span> The most programs can do is interact with <span class="pink">dynamic libraries, system API, and structs</span>, but that's just about it.</p>
 		
 		<br>
 
@@ -33,12 +33,12 @@
 		<br>
 
 		<p>Here's a <span class="worm">"Hello Worm" server</span> in <span class="worm">Worm 🐛</span>:</p>
-		<pre><code>const server = Worm.serve({
+		<div style="text-align: left; justify-content: center;"><pre><code>const server = Worm.serve({
 	routes: {
 		"/": new Response("Hello Worm!")
 	}
 });
-console.log(`Server running at ${server.url}`);</code></pre>
+console.log(`Server running at ${server.url}`);</code></pre></div>
 
 		<div style="padding-top: 1000vh;"></div>
 	</body>
