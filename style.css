@@ -31,6 +31,10 @@ img {
 	text-align: center;
 }
 
+.code {
+	display: flex; justify-content: center; tab-size: 4;
+}
+
 .trans {
 	opacity: 0.5;
 }
