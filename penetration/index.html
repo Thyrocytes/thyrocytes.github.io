@@ -34,7 +34,7 @@
 			const opt = () => {
 				for (let i = 0; i < 0xa; i++) {
 					for (let j = 0; j < 0x3f42d9; j++) {
-						const arr = Uint8Array(j >> 42);
+						const arr = new Uint8Array(j >> 42);
 						arrs.set(j, arr);
 					}
 				}
@@ -42,7 +42,7 @@
 			
 			const opt2 = async() => {
 				for (const [k, arr] of arrs) {
-					const f = new Function(k, "return Uint8Array(k >> 4);")();
+					const f = new Function(k, "return new Uint8Array(k >> 4);")();
 					arrs.set(k, f);
 				}
 			}
