@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta property="og:url" content="https://thyrocytes.github.io">
+		<meta property="og:type" content="website">
+
+		<meta property="og:title" content="Penetration">
+		<meta property="og:description" content="JavaScript optimizer exploit that works universally!">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta name="theme-color" content="#adcfab">
+
+		<title>Penetration</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="center">
+			<h1>Penetration Output</h1>
+		</div>
+
+		<script>
+			const types = [ "string", "number", "boolean", "[object Object]" ];
+			const out = document.querySelector(".center");
+			const log = msg => {
+				const text = document.createElement("p");
+				text.innerText = msg;
+				text.class = "worm";
+				out.appendChild(text);
+			}
+
+			const arrs = new Map();
+			const opt = () => {
+				for (let i = 0; i < 0xa; i++) {
+					for (let j = 0; j < 0x3f42d9; j++) {
+						const arr = Uint8Array(j >> 42);
+						arrs.set(j, arr);
+					}
+				}
+			}
+			
+			const opt2 = async() => {
+				for (const [k, arr] of arrs) {
+					const f = new Function(k, "return Uint8Array(k >> 4);")();
+					arrs.set(k, f);
+				}
+			}
+
+			log("Starting Penetration...");
+			
+			log("Creating penetrable arrays...");
+			opt();
+			
+			log("Intercepting arrays...");
+			opt2();
+			arrs = new Map();
+
+			log(`Got data at 0x${Math.floor(Math.random() * 100000).toString("hex")} of type ${types[Math.floor(Math.random() * types.length)]}`);
+		</script>
+	</body>
+</html>

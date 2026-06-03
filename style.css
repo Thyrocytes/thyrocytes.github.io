@@ -7,7 +7,6 @@ body {
 	*/
 	background-image: radial-gradient(circle, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom in oklch, #101010, #000000);
 	background-repeat: no-repeat;
-	background-size: 3px 3px, 100% 100%;
 
 	-webkit-user-select: none;
 	-ms-user-select: none;
