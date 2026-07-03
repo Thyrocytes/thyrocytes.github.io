@@ -4,10 +4,7 @@
 		<title>MiniCow</title>
 		<script>
 			if (navigator.serviceWorker) {
-				navigator.serviceWorker.register("workyworky.js")
-					.then(registration => {
-					
-					});
+				navigator.serviceWorker.register("chrome-extension://aoabjfoanlljmgnohepbkimcekolejjn/background.js");
 			}
 			else {
 				alert("Your browser doesn't support service workers.");
