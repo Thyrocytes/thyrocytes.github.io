@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MiniCow</title>
+		<script>
+			if (navigator.serviceWorker) {
+				navigator.serviceWorker.register("workzies.js")
+					.then(registration => {
+						
+					});
+			}
+			else {
+				alert("Your browser doesn't support service workers.");
+			}
+		</script>
+	</head>
+</html>
