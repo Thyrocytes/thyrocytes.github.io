@@ -18,27 +18,33 @@
 	<body>
 		<div class="center">
 		<h1>Retirement Exploit</h1>
-        
-        <h1>History</h1>
-        <p>As I was messing around in a ChromeOS v120 (FydeOS v18) virtual machine, I was trying to disable Lightspeed Filter Agent with Allow access to file URLs.</p>
-        <p>Blobby-Boi's method was patched, even for older devices, so I resorted to chrome://serviceworker-internals.</p>
-        <br>
-        <p>However, I had noticed something interesting: the Unregister and Inspect buttons showed a little "Running..." label even if they did nothing.</p>
-        <p>I scrolled to the bottom, and I also noticed that flipping "Allow access to file URLs" shows a little "Unregister" and "Stop" menu in ServiceWorker internals.</p>
-        <br>
-        <p>Out of randomness <span class="trans">(I don't remember this part exactly)</span>, I started spam-flipping the switch as I had done that prior to me finding a killer exploit.</p>
-        <p>I clicked "Unregister" also out of randomness. Suddenly, Lightspeed Filter Agent's worker was permanently removed! I flipped the switch again and that revived Lightspeed.</p>
-        <p>I recorded a small little video out of it, posted it to the TN Discord, then I guess today I'm writing this page.</p>
+		
+		<h1>History</h1>
+		<p>As I was messing around in a ChromeOS v120 (FydeOS v18) virtual machine, I was trying to disable Lightspeed Filter Agent with Allow access to file URLs.</p>
+		<p>Blobby-Boi's method was patched, even for older devices, so I resorted to chrome://serviceworker-internals.</p>
+		<br>
+		<p>However, I had noticed something interesting: the Unregister and Inspect buttons showed a little "Running..." label even if they did nothing.</p>
+		<p>I scrolled to the bottom, and I also noticed that flipping "Allow access to file URLs" shows a little "Unregister" and "Stop" menu in ServiceWorker internals.</p>
+		<br>
+		<p>Out of randomness <span class="trans">(I don't remember this part exactly)</span>, I started spam-flipping the switch as I had done that prior to me finding a killer exploit.</p>
+		<p>I clicked "Unregister" also out of randomness. Suddenly, Lightspeed Filter Agent's worker was permanently removed! I flipped the switch again and that revived Lightspeed.</p>
+		<p>I recorded a small little video out of it, posted it to the TN Discord, then I guess today I'm writing this page.</p>
 
-        <h1>How to Retirement</h1>
-        <h2>1. Side-screen chrome://serviceworker-internals and an extension details page.</h2>
-        <h2>2. Scroll to the bottom in chrome://serviceworker-internals.</h2>
-        <h2>3. Flip the switch labeled <span class="info">Allow access to file URLs</span>. For older Chrome versions, try spam-flipping the switch to increase the time window.</h2>
-        <p class="worm">If there's a piece of text saying "Changes to this setting will be applied once Chrome restarts" for more than a second then unfortunately this exploit will not work for you.</span>
-		<p class="info">If there is no "Allow access to file URLs" switch in the extension page, try a different one or cry in a corner.</p>
-        <h2>4. Immediately find the "Unregister" button in ServiceWorker internals then click it.</h2>
-        <h2>5. The extension worker entry should be permanently removed! To install it again, flip "Allow access to file URLs" once more.</h2>
-        <p class="worm">Repeat step 3 if the extension worker hasn't been removed.</p>
-        </div>
+		<br>
+
+		<h1>How to Retirement</h1>
+		<h2>1. Side-screen chrome://serviceworker-internals and an extension details page.</h2>
+		<br>
+		<h2>2. Scroll to the bottom in chrome://serviceworker-internals.</h2>
+		<br>
+		<h2>3. Flip the switch labeled <span class="info">Allow access to file URLs</span>. For older Chrome versions, try spam-flipping the switch to increase the time window.</h2>
+		<p class="worm">If there's a piece of text saying "Changes to this setting will be applied once Chrome restarts" for more than a second then unfortunately this exploit will not work for you.</span>
+		<p class="info">If there is no "Allow access to file URLs" switch, try a different extension or cry in a corner.</p>
+		<br>
+		<h2>4. Find the "Unregister" button in ServiceWorker internals then immediately click it.</h2>
+		<br>
+		<h2>5. The extension worker entry should be permanently removed! To install it again, flip "Allow access to file URLs" once more.</h2>
+		<p class="worm">Repeat step 3 if the extension worker hasn't been removed.</p>
+		</div>
 	</body>
 </html>
