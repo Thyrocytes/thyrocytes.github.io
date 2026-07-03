@@ -20,15 +20,15 @@
 		<h1>Retirement Exploit</h1>
 		
 		<h1>History</h1>
-		<p>As I was messing around in a ChromeOS v120 (FydeOS v18) virtual machine, I was trying to disable Lightspeed Filter Agent with Allow access to file URLs.</p>
-		<p>Blobby-Boi's method was patched, even for older devices, so I resorted to chrome://serviceworker-internals.</p>
+		<p>As I was messing around in a FydeOS v18 (Chrome v120) virtual machine, I was trying to disable Lightspeed Filter Agent with <span class="info">Allow access to file URLs</span> and <span class="green">LightSPED Killer Agent</span>.</p>
+		<p>Blobby-Boi's method was patched, even for older Chrome versions, so I resorted to chrome://serviceworker-internals.</p>
 		<br>
 		<p>However, I had noticed something interesting: the Unregister and Inspect buttons showed a little "Running..." label even if they did nothing.</p>
 		<p>I scrolled to the bottom, and I also noticed that flipping "Allow access to file URLs" shows a little "Unregister" and "Stop" menu in ServiceWorker internals.</p>
 		<br>
-		<p>Out of randomness <span class="trans">(I don't remember this part exactly)</span>, I started spam-flipping the switch as I had done that prior to me finding a killer exploit.</p>
+		<p>Out of randomness <span class="trans">(I don't remember the following parts exactly)</span>, I started spam-flipping the switch as I had done that prior to me finding a killer exploit.</p>
 		<p>I clicked "Unregister" also out of randomness. Suddenly, Lightspeed Filter Agent's worker was permanently removed! I flipped the switch again and that revived Lightspeed.</p>
-		<p>I recorded a small little video out of it, posted it to the TN Discord, then I guess today I'm writing this page.</p>
+		<p>I recorded a small little video out of it, posted the exploit details to the TN Discord <span class="trans">(#kajigs-discussion)</span>, then I guess today I'm writing this page.</p>
 
 		<br>
 
