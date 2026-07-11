@@ -1,51 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body {
-	background-color: #101010;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	color: white;
-	font-family: Roboto;
-}
-
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-
-	transform: scale(0.95);
-}
-
-.center * {
-	margin-top: 2px;
-	margin-bottom: 2px;
-	text-align: center;
-}
-
-.code {
-	display: flex; justify-content: center; tab-size: 4;
-}
-
-.trans {
-	opacity: 0.5;
-}
-
-.important {
-	color: orange;
-}
-
-.info {
-	color: #00aaff;
-}
-
-.pink {
-	color: #d399ff;
-}
-
-.green {
-	color: #56ac4e;
-}
-
-.worm {
-	color: #ff364a;
-}
+body{background-color:#101010;-webkit-user-select:none;-ms-user-select:none;user-select:none;color:white;font-family:Roboto}
+img{display:block;margin-left:auto;margin-right:auto;transform:scale(0.95)}
+.a *{margin-top:2px;margin-bottom:2px;text-align:center}
+.b{opacity:0.5}
+.c{color:orange}
+.d{color:#00aaff}
+.e{color:#d399ff}
+.f{color:#56ac4e}
+.g{color:#ff364a}
