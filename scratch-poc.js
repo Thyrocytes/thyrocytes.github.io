@@ -1,1 +1,0 @@
-alert("Well, hello there! This is coming from a Scratch exploit where arbitrary JavaScript can be run via SVGs. This was originally");

